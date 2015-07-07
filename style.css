@@ -17,6 +17,7 @@
 }
 
 .search-input{
+<<<<<<< HEAD
 	margin: 20px 0;
 }
 .subMenu1,.subMenu2,.subMenu3{
@@ -31,4 +32,12 @@
 }
 .caprion{
 	display: none;
+=======
+
+}
+.desc{
+	min-height: 40px;
+	max-height: 40px;
+	overflow: hidden;
+>>>>>>> fe386a59643125acbfda909c713e11a6c28b6cb2
 }
