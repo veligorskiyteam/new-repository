@@ -114,11 +114,34 @@
         <div class="col-md-3">
             <input ng-model="query" type="text" class="form-control search-input" placeholder="Поиск..." >
             <div class="list-group">
-                <a href="#" class="list-group-item active">Пульты</a>
-                <a href="#" class="list-group-item">Техника</a>
-                <a href="#" class="list-group-item">Morbi leo risus</a>
-                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
-                <a href="#" class="list-group-item">Vestibulum at eros</a>
+                <a href="#" id="1b" class="list-group-item active">Пульты
+                    
+                </a>
+                <ul  class="subMenu1">
+                        <li><a href="#">Position1</a></li>
+                        <li><a href="#">Position2</a></li>
+                        <li><a href="#">Position3</a></li>
+                        <li><a href="#">Position4</a></li>
+                        <li><a href="#">Position5</a></li>
+                    </ul>
+                <a href="#" id="2b" class="list-group-item">Бытовая Техника</a>
+                     <ul class="subMenu2">
+                        <li><a href="#">Position1</a></li>
+                        <li><a href="#">Position2</a></li>
+                        <li><a href="#">Position3</a></li>
+                        <li><a href="#">Position4</a></li>
+                        <li><a href="#">Position5</a></li>
+                    </ul>
+                <a href="#" id="3b" class="list-group-item">Электроника</a>
+                 <ul class="subMenu3">
+                        <li><a href="#">Position1</a></li>
+                        <li><a href="#">Position2</a></li>
+                        <li><a href="#">Position3</a></li>
+                        <li><a href="#">Position4</a></li>
+                        <li><a href="#">Position5</a></li>
+                    </ul>
+                <a href="#" class="list-group-item">Адаптеры питания</a>
+                <a href="#" class="list-group-item">Вспомогательное оборудование и материалы</a>
             </div>
         </div>
         <div class="col-md-9">
@@ -135,5 +158,27 @@
         </div>
     </div>
 </div>
+<script>
+    $(document).ready(function(){
+ $('#1b').click(function(e){
+        // $(this)
+        // .toggleClass('btn-news-close')
+        // .toggleClass('btn-news-open');
+        $('.subMenu1').slideToggle(800);
+    });
+ $('#2b').click(function(e){
+        // $(this)
+        // .toggleClass('btn-news-close')
+        // .toggleClass('btn-news-open');
+        $('.subMenu2').slideToggle(800);
+    });
+ $('#3b').click(function(e){
+        // $(this)
+        // .toggleClass('btn-news-close')
+        // .toggleClass('btn-news-open');
+        $('.subMenu3').slideToggle(800);
+    });
+});
+</script>
 </body>
 </html>
