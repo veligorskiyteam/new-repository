@@ -3,7 +3,7 @@
 }
 
 .product{
-	width: 300px;
+	width: 250px;
 	display: inline-block;
 	max-height: 355px;
 	overflow: hidden;
@@ -14,4 +14,8 @@
 	display: flex;
 	flex-flow: row wrap;	
 	justify-content: space-around;
+}
+
+.search-input{
+	margin: 20px 0;
 }

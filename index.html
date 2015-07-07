@@ -17,10 +17,10 @@
             <a class="navbar-brand" href="#">Pultcher</a>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Home</a></li>
-                <li><a href="#">Link2</a></li>
-                <li><a href="#">Link3</a></li>
-                <li><a href="#">Link4</a></li>
+                <li class="active"><a href="#">Главная</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">О нас</a></li>
+                <li><a href="#">Отзывы</a></li>
             </ul>
         </div>
     </nav>
@@ -111,22 +111,29 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-2">
-            Поиск: <input ng-model="query"/>
+        <div class="col-md-3">
+            <input ng-model="query" type="text" class="form-control search-input" placeholder="Поиск..." >
+            <div class="list-group">
+                <a href="#" class="list-group-item active">Пульты</a>
+                <a href="#" class="list-group-item">Техника</a>
+                <a href="#" class="list-group-item">Morbi leo risus</a>
+                <a href="#" class="list-group-item">Porta ac consectetur ac</a>
+                <a href="#" class="list-group-item">Vestibulum at eros</a>
+            </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-9">
             <div class="content">
                 <div class="thumbnail product"  ng-repeat="pult in pults | filter:query">
                     <img src="http://lorempixel.com/100/200/technics/" alt="Generic placeholder thumbnail"/>
-                     <div class="caption">
-                      <h4>{{pult.name}}</h4>
-                      <p>{{pult.snippet}}</p>
-                      <span class="label label-primary pull-right">Цена: {{pult.price}} грн.</span>                   
-                     </div>
+                    <div class="caption">
+                        <h4>{{pult.name}}</h4>
+                        <p>{{pult.snippet}}</p>
+                        <span class="label label-primary pull-right">Цена: {{pult.price}} грн.</span>                   
+                    </div>
                 </div>
             </div> 
-         </div>
-</div>
+        </div>
+    </div>
 </div>
 </body>
 </html>
