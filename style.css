@@ -17,5 +17,10 @@
 }
 
 .search-input{
-	margin: 20px 0;
+	margin: 20px 0
+}
+.desc{
+	min-height: 40px;
+	max-height: 40px;
+	overflow: hidden;
 }
