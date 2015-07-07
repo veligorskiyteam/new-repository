@@ -1,22 +1,19 @@
-'use strict';
+
 
 /* Controllers */
 
-var phonecatControllers = angular.module('phonecatControllers', []);
+var App = angular.module('store', []);
 
-phonecatControllers.controller('PhoneListCtrl', ['$scope', 'Phone',
-  function($scope, Phone) {
-    $scope.phones = Phone.query();
-    $scope.orderProp = 'age';
-  }]);
-
-phonecatControllers.controller('PhoneDetailCtrl', ['$scope', '$routeParams', 'Phone',
-  function($scope, $routeParams, Phone) {
-    $scope.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
-      $scope.mainImageUrl = phone.images[0];
-    });
-
-    $scope.setImage = function(imageUrl) {
-      $scope.mainImageUrl = imageUrl;
-    };
-  }]);
+App.controller('StoreCtrl', function($scope) {
+  $scope.pults = [
+    {'name': 'Nexus S',
+     'snippet': 'Fast just got faster with Nexus S.',
+ 	'price': 100.00},
+    {'name': 'Motorola XOOM™ with Wi-Fi',
+     'snippet': 'The Next, Next Generation tablet.',
+ 	'price': 110.00},
+    {'name': 'MOTOROLA XOOM™',
+     'snippet': 'The Next, Next Generation tablet.',
+ 	'price': 150.00}
+  ];
+});

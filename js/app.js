@@ -1,28 +1,14 @@
-'use strict';
+
 
 /* App Module */
-
-var phonecatApp = angular.module('phonecatApp', [
-  'ngRoute',
-  'phonecatAnimations',
-
-  'phonecatControllers',
-  'phonecatFilters',
-  'phonecatServices'
-]);
-
-phonecatApp.config(['$routeProvider',
-  function($routeProvider) {
-    $routeProvider.
-      when('/phones', {
-        templateUrl: 'partials/phone-list.html',
-        controller: 'PhoneListCtrl'
-      }).
-      when('/phones/:phoneId', {
-        templateUrl: 'partials/phone-detail.html',
-        controller: 'PhoneDetailCtrl'
-      }).
-      otherwise({
-        redirectTo: '/phones'
-      });
-  }]);
+/*
+var app = angular.module('gemStore', []);
+  var gems = [
+    { name: 'Azurite', price: 2.95 },
+    { name: 'Bloodstone', price: 5.95 },
+    { name: 'Zircon', price: 3.95 }
+  ];
+app.controller('StoreController', function($scope) {
+  $scope.products = gems;
+   });
+   */

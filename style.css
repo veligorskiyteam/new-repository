@@ -1,3 +1,17 @@
 .carousel-indicators {
   bottom: 0px !important;
 }
+
+.product{
+	width: 300px;
+	display: inline-block;
+	max-height: 355px;
+	overflow: hidden;
+	
+}
+.content{
+	margin-top: 20px;
+	display: flex;
+	flex-flow: row wrap;	
+	justify-content: space-around;
+}
