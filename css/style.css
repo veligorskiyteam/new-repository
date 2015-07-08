@@ -2,13 +2,26 @@
   bottom: 0px !important;
 }
 
-.product{
+.pults{
 	width: 250px;
-	display: inline-block;
+	//display: inline-block;
+	display: none;
 	max-height: 355px;
 	overflow: hidden;
-	
 }
+
+.tech{
+	width: 250px;
+	//display: inline-block;
+	display: none;
+	max-height: 355px;
+	overflow: hidden;	
+}
+
+.vis-content{
+	display: block;
+}
+
 .content{
 	margin-top: 20px;
 	display: flex;
@@ -17,9 +30,14 @@
 }
 
 .search-input{
+<<<<<<< HEAD:style.css
 
 	margin: 20px 0 20px;
+=======
+	margin: 20px 0;
+>>>>>>> ef2d42915295803a310393a1acb4d83ed5700aff:css/style.css
 }
+
 .subMenu1,.subMenu2,.subMenu3{
 	list-style: square;
 	margin:0px;
@@ -29,17 +47,30 @@
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
 }
+<<<<<<< HEAD:style.css
 .subMenu1 a:hover,.subMenu2 a:hover,.subMenu3 a:hover{
 	color:red;
 }
 .caprion{
 	display: none;
+=======
+
+.caprion{
+	display: none;
 }
+
+.caption h4{
+	height: 30px;
+>>>>>>> ef2d42915295803a310393a1acb4d83ed5700aff:css/style.css
+}
+
 .desc{
 	min-height: 40px;
 	max-height: 40px;
+	height: 40px;
 	overflow: hidden;
 }
+<<<<<<< HEAD:style.css
 .contact{
 	height: 55px;
 	background: red;
@@ -84,3 +115,5 @@
 	
 }
 */
+=======
+>>>>>>> ef2d42915295803a310393a1acb4d83ed5700aff:css/style.css
