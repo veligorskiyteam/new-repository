@@ -17,27 +17,70 @@
 }
 
 .search-input{
-<<<<<<< HEAD
-	margin: 20px 0;
+
+	margin: 20px 0 20px;
 }
 .subMenu1,.subMenu2,.subMenu3{
-	list-style: none;
+	list-style: square;
 	margin:0px;
-	padding: 0;
 	position: relative;
 	display: none;
 	margin-top: 5px;
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
 }
+.subMenu1 a:hover,.subMenu2 a:hover,.subMenu3 a:hover{
+	color:red;
+}
 .caprion{
 	display: none;
-=======
-
 }
 .desc{
 	min-height: 40px;
 	max-height: 40px;
 	overflow: hidden;
->>>>>>> fe386a59643125acbfda909c713e11a6c28b6cb2
 }
+.contact{
+	height: 55px;
+	background: red;
+}
+#contact{
+	position: relative;
+}
+.information{
+	background: url(img/4t.png);
+	position: absolute;
+	top: 38px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	left: 20px;
+	padding-top: 54px;
+	padding-left: 10px;
+	height: 215px;
+	width: 300px;
+	z-index: 20;
+	display: none;
+}
+.mob1{
+	margin-left: 50px;
+}
+.information b{
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.logo{
+	font-family: 'Sigmar One', cursive;
+	font-size: 2.25em;
+	color:#0AADC9;
+}
+.search-input{
+	/*font-style: italic;*/
+	font-family: 'Armata', sans-serif;
+	font-size: 1.1em;
+}
+/*.menuClick{
+	font-weight: bold;
+	
+}
+*/

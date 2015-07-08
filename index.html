@@ -2,7 +2,7 @@
 <html lang="en" ng-app="store">
 <head>
   <meta charset="utf-8">
-  <title>Pultcher</title>
+  <title>PulTcheR</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="style.css">
   <script src="bower_components/angular/angular.js"></script>
@@ -10,15 +10,25 @@
   <script src="bower_components/js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
+  <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 </head>
 <body ng-controller="StoreCtrl">
     <div class="container">
         <nav class="navbar navbar-default">
-            <a class="navbar-brand" href="#">Pultcher</a>
+        <a class="navbar-brand" href="#"><span class="logo">Pultcher</span></a>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Главная</a></li>
-                <li><a href="#">Контакты</a></li>
+                
+                <li  id="contact"><a href="#">Контакты</a>
+                    <div class="information">
+                        <p><b>Владелец</b> : Тарасевич Андрей Петрович</p>
+                        <p><b>Моб.</b> : +38(093)-500-42-28</p>
+                        <p class="mob1">+38(067)-70-44-773</p>
+                        <p class="mob1">+38(068)-38-50-317</p>
+                        <p><b>email</b> : Radioatar@tambler.ru</p>
+                    </div>
+                </li>
                 <li><a href="#">О нас</a></li>
                 <li><a href="#">Отзывы</a></li>
             </ul>
@@ -114,7 +124,7 @@
         <div class="col-md-3">
             <input ng-model="query" type="text" class="form-control search-input" placeholder="Поиск..." >
             <div class="list-group">
-                <a href="#" id="1b" class="list-group-item active">Пульты
+                <a href="#" id="1b" class="list-group-item ">Пульты
                     
                 </a>
                 <ul  class="subMenu1">
@@ -161,22 +171,24 @@
 <script>
     $(document).ready(function(){
  $('#1b').click(function(e){
-        // $(this)
-        // .toggleClass('btn-news-close')
-        // .toggleClass('btn-news-open');
+        $(this)
+        .toggleClass('active')
         $('.subMenu1').slideToggle(800);
     });
  $('#2b').click(function(e){
-        // $(this)
-        // .toggleClass('btn-news-close')
-        // .toggleClass('btn-news-open');
+        $(this)
+        .toggleClass('active')
         $('.subMenu2').slideToggle(800);
     });
  $('#3b').click(function(e){
-        // $(this)
-        // .toggleClass('btn-news-close')
-        // .toggleClass('btn-news-open');
+        $(this).
+        toggleClass('active');
         $('.subMenu3').slideToggle(800);
+    });
+ $('#contact').click(function(e){
+        $(this)
+        .toggleClass('active').toggleClass('menuClick');
+                $('.information').slideToggle(800);
     });
 });
 </script>
