@@ -2,13 +2,26 @@
   bottom: 0px !important;
 }
 
-.product{
+.pults{
 	width: 250px;
-	display: inline-block;
+	//display: inline-block;
+	display: none;
 	max-height: 355px;
 	overflow: hidden;
-	
 }
+
+.tech{
+	width: 250px;
+	//display: inline-block;
+	display: none;
+	max-height: 355px;
+	overflow: hidden;	
+}
+
+.vis-content{
+	display: block;
+}
+
 .content{
 	margin-top: 20px;
 	display: flex;
@@ -17,10 +30,31 @@
 }
 
 .search-input{
-	margin: 20px 0
+	margin: 20px 0;
 }
+
+.subMenu1,.subMenu2,.subMenu3{
+	list-style: none;
+	margin:0px;
+	padding: 0;
+	position: relative;
+	display: none;
+	margin-top: 5px;
+	letter-spacing: 1.5px;
+	text-transform: uppercase;
+}
+
+.caprion{
+	display: none;
+}
+
+.caption h4{
+	height: 30px;
+}
+
 .desc{
 	min-height: 40px;
 	max-height: 40px;
+	height: 40px;
 	overflow: hidden;
 }

@@ -114,17 +114,15 @@
         <div class="col-md-3">
             <input ng-model="query" type="text" class="form-control search-input" placeholder="Поиск..." >
             <div class="list-group">
-                <a href="#" id="1b" class="list-group-item active">Пульты
-                    
-                </a>
-                <ul  class="subMenu1">
+                <a href="#" id="1b" class="list-group-item left-menu active">Пульты</a>
+                    <ul class="subMenu1">
                         <li><a href="#">Position1</a></li>
                         <li><a href="#">Position2</a></li>
                         <li><a href="#">Position3</a></li>
                         <li><a href="#">Position4</a></li>
                         <li><a href="#">Position5</a></li>
                     </ul>
-                <a href="#" id="2b" class="list-group-item">Бытовая Техника</a>
+                <a href="#" id="2b" class="list-group-item left-menu">Бытовая Техника</a>
                      <ul class="subMenu2">
                         <li><a href="#">Position1</a></li>
                         <li><a href="#">Position2</a></li>
@@ -132,7 +130,7 @@
                         <li><a href="#">Position4</a></li>
                         <li><a href="#">Position5</a></li>
                     </ul>
-                <a href="#" id="3b" class="list-group-item">Электроника</a>
+                <a href="#" id="3b" class="list-group-item left-menu">Электроника</a>
                  <ul class="subMenu3">
                         <li><a href="#">Position1</a></li>
                         <li><a href="#">Position2</a></li>
@@ -140,13 +138,13 @@
                         <li><a href="#">Position4</a></li>
                         <li><a href="#">Position5</a></li>
                     </ul>
-                <a href="#" class="list-group-item">Адаптеры питания</a>
-                <a href="#" class="list-group-item">Вспомогательное оборудование и материалы</a>
+                <a href="#" class="list-group-item left-menu">Адаптеры питания</a>
+                <a href="#" class="list-group-item left-menu">Вспомогательное оборудование и материалы</a>
             </div>
         </div>
         <div class="col-md-9">
-            <div class="content">
-                <div class="thumbnail product"  ng-repeat="pult in pults | filter:query">
+            <div class="content" ng-controller="StoreCtrlTech">
+                <div class="thumbnail products pults vis-content"  ng-repeat="pult in pults | filter:query">
                     <img src="http://lorempixel.com/100/200/technics/" alt="Generic placeholder thumbnail"/>
                     <div class="caption">
                         <h4>{{pult.name}}</h4>
@@ -154,31 +152,20 @@
                         <span class="label label-primary pull-right">Цена: {{pult.price}} грн.</span>                   
                     </div>
                 </div>
+
+                <!---->
+                <div class="thumbnail products tech" ng-repeat="tech in techs | filter:query">
+                    <img src="http://lorempixel.com/100/200/transport/" alt="Generic placeholder thumbnail"/>
+                    <div class="caption">
+                        <h4>{{tech.name}}</h4>
+                        <p class="desc">{{tech.snippet}}</p>
+                        <span class="label label-primary pull-right">Цена: {{tech.price}} грн.</span>                   
+                    </div>
+                </div>
             </div> 
         </div>
     </div>
 </div>
-<script>
-    $(document).ready(function(){
- $('#1b').click(function(e){
-        // $(this)
-        // .toggleClass('btn-news-close')
-        // .toggleClass('btn-news-open');
-        $('.subMenu1').slideToggle(800);
-    });
- $('#2b').click(function(e){
-        // $(this)
-        // .toggleClass('btn-news-close')
-        // .toggleClass('btn-news-open');
-        $('.subMenu2').slideToggle(800);
-    });
- $('#3b').click(function(e){
-        // $(this)
-        // .toggleClass('btn-news-close')
-        // .toggleClass('btn-news-open');
-        $('.subMenu3').slideToggle(800);
-    });
-});
-</script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
