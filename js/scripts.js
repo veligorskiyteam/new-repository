@@ -18,8 +18,7 @@ $(function(){
         $('.tech').addClass('vis-content');
     });
     $('#contact').click(function(e){
-        $(this)
-        .toggleClass('active').toggleClass('menuClick');
-                $('.information').slideToggle(800);
+        $(this).toggleClass('active').toggleClass('menuClick');
+        $('.information').slideToggle(800);
     });
 });

@@ -30,12 +30,7 @@
 }
 
 .search-input{
-<<<<<<< HEAD:style.css
-
-	margin: 20px 0 20px;
-=======
 	margin: 20px 0;
->>>>>>> ef2d42915295803a310393a1acb4d83ed5700aff:css/style.css
 }
 
 .subMenu1,.subMenu2,.subMenu3{
@@ -47,21 +42,13 @@
 	letter-spacing: 1.5px;
 	text-transform: uppercase;
 }
-<<<<<<< HEAD:style.css
+
 .subMenu1 a:hover,.subMenu2 a:hover,.subMenu3 a:hover{
 	color:red;
-}
-.caprion{
-	display: none;
-=======
-
-.caprion{
-	display: none;
 }
 
 .caption h4{
 	height: 30px;
->>>>>>> ef2d42915295803a310393a1acb4d83ed5700aff:css/style.css
 }
 
 .desc{
@@ -70,7 +57,7 @@
 	height: 40px;
 	overflow: hidden;
 }
-<<<<<<< HEAD:style.css
+
 .contact{
 	height: 55px;
 	background: red;
@@ -79,7 +66,7 @@
 	position: relative;
 }
 .information{
-	background: url(img/4t.png);
+	background: url(../img/4t.png);
 	position: absolute;
 	top: 38px;
 	box-sizing:border-box;
@@ -115,5 +102,4 @@
 	
 }
 */
-=======
->>>>>>> ef2d42915295803a310393a1acb4d83ed5700aff:css/style.css
+
