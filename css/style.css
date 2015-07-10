@@ -4,7 +4,6 @@
 
 .pults{
 	width: 250px;
-	//display: inline-block;
 	display: none;
 	max-height: 355px;
 	overflow: hidden;
@@ -12,7 +11,6 @@
 
 .tech{
 	width: 250px;
-	//display: inline-block;
 	display: none;
 	max-height: 355px;
 	overflow: hidden;	

@@ -4,8 +4,11 @@
   <meta charset="utf-8">
   <title>PulTcheR</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/js/bootstrap.min.js"></script>
   <script src="js/app.js"></script>
@@ -152,8 +155,8 @@
             </div>
         </div>
         <div class="col-md-9">
-            <div class="content" ng-controller="StoreCtrlTech">
-                <div class="thumbnail products pults vis-content"  ng-repeat="pult in pults | filter:query">
+            <div class="content">
+                <div class="thumbnail products pults vis-content"  ng-repeat="pult in filteredTodos | filter:query">
                     <img src="http://lorempixel.com/100/200/technics/" alt="Generic placeholder thumbnail"/>
                     <div class="caption">
                         <h4>{{pult.name}}</h4>
@@ -171,7 +174,18 @@
                         <span class="label label-primary pull-right">Цена: {{tech.price}} грн.</span>                   
                     </div>
                 </div>
-            </div> 
+            </div>
+            <div class="col-md-12 text-center">
+                <pagination 
+                    total-items="itemLength"
+                    ng-model="currentPage" 
+                    items-per-page="numPerPage"
+                    max-size="maxSize" 
+                    boundary-links="true" 
+                    rotate="false" 
+                    num-pages="numPages">
+                </pagination>
+            </div>   
         </div>
     </div>
 </div>
