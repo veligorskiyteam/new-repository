@@ -124,7 +124,7 @@
     </div>
     <div class="row">
         <div class="col-md-3">
-            <input ng-model="query" type="text" class="form-control search-input" placeholder="Поиск..." >
+            <input ng-model="query" ng-change="search()" type="text" class="form-control search-input" placeholder="Поиск..." >
             <div class="list-group">
                 <a href="#" id="1b" class="list-group-item left-menu active">Пульты</a>
                     <ul class="subMenu1">
@@ -156,7 +156,7 @@
         </div>
         <div class="col-md-9">
             <div class="content">
-                <div class="thumbnail products pults vis-content"  ng-repeat="pult in filteredTodos | filter:query">
+                <div class="thumbnail products pults vis-content"  ng-repeat="pult in filteredTodos | filter:query" >
                     <img src="http://lorempixel.com/100/200/technics/" alt="Generic placeholder thumbnail"/>
                     <div class="caption">
                         <h4>{{pult.name}}</h4>
@@ -183,7 +183,7 @@
                     max-size="maxSize" 
                     boundary-links="true" 
                     rotate="false" 
-                    num-pages="numPages">
+                    >
                 </pagination>
             </div>   
         </div>
