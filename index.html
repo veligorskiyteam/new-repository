@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
   <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/js/bootstrap.min.js"></script>
   <script src="directives/pagination/dirPagination.js"></script>
@@ -15,7 +16,7 @@
   <link href='http://fonts.googleapis.com/css?family=Sigmar+One' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 </head>
-<body ng-controller="StoreCtrl">
+<body>
     <div class="container">
         <nav class="navbar navbar-default">
         <a class="navbar-brand" href="#"><span class="logo">Pultcher</span></a>
@@ -35,97 +36,12 @@
             </ul>
         </div>
     </nav>
+    <!--CAROUSELS.html>>-->
     <div class="row">
         <div class="col-md-3">
-            <div id="myCarousel-left" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators hidden-xs">
-                    <li data-target="#myCarousel-left" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel-left" data-slide-to="1"></li>
-                    <li data-target="#myCarousel-left" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img class="first-slide" src="http://lorempixel.com/260/160/technics/" alt="First slide">
-                    </div>
-                    <div class="item">
-                        <img class="second-slide" src="http://lorempixel.com/260/160/business/" alt="Second slide">
-                    </div>
-                    <div class="item">
-                        <img class="third-slide" src="http://lorempixel.com/250/160/people/" alt="Third slide">
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#myCarousel-left" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel-left" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div id="myCarousel-center" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators hidden-xs">
-                    <li data-target="#myCarousel-center" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel-center" data-slide-to="1"></li>
-                    <li data-target="#myCarousel-center" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img class="first-slide" src="http://lorempixel.com/555/160/technics/" alt="First slide">
-                    </div>
-                    <div class="item">
-                        <img class="second-slide" src="http://lorempixel.com/555/160/business/" alt="Second slide">
-                    </div>
-                    <div class="item">
-                        <img class="third-slide" src="http://lorempixel.com/555/160/people/" alt="Third slide">
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#myCarousel-center" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel-center" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-        <div class="col-md-3">
-            <div id="myCarousel-right" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators hidden-xs">
-                    <li data-target="#myCarousel-right" data-slide-to="0" class="active"></li>
-                    <li data-target="#myCarousel-right" data-slide-to="1"></li>
-                    <li data-target="#myCarousel-right" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <img class="first-slide" src="http://lorempixel.com/260/160/people/" alt="First slide">
-                    </div>
-                    <div class="item">
-                        <img class="second-slide" src="http://lorempixel.com/260/160/technics/" alt="Second slide">
-                    </div>
-                    <div class="item">
-                        <img class="third-slide" src="http://lorempixel.com/250/160/business/" alt="Third slide">
-                    </div>
-                </div>
-                <a class="left carousel-control" href="#myCarousel-right" role="button" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="right carousel-control" href="#myCarousel-right" role="button" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-3">
-            <input ng-model="query" type="text" class="form-control search-input" placeholder="Поиск..." >
+            <input type="text" ng-model="query" class="form-control search-input" placeholder="Поиск по категориям..." >
             <div class="list-group">
-                <a href="#" id="1b" class="list-group-item left-menu active">Пульты</a>
+                <a href="#/pults" id="1b" class="list-group-item left-menu active">Пульты</a>
                     <ul class="subMenu1">
                         <li><a href="#">Position1</a></li>
                         <li><a href="#">Position2</a></li>
@@ -133,7 +49,7 @@
                         <li><a href="#">Position4</a></li>
                         <li><a href="#">Position5</a></li>
                     </ul>
-                <a href="#" id="2b" class="list-group-item left-menu">Бытовая Техника</a>
+                <a href="#/techs" id="2b" class="list-group-item left-menu">Бытовая Техника</a>
                      <ul class="subMenu2">
                         <li><a href="#">Position1</a></li>
                         <li><a href="#">Position2</a></li>
@@ -154,29 +70,7 @@
             </div>
         </div>
         <div class="col-md-9">
-            <div class="content">
-                <div class="thumbnail products pults vis-content"  dir-paginate="pult in pults | filter:query | itemsPerPage: 6" current-page="currentPage" pagination-id="drinksPagination">
-                    <img src="http://lorempixel.com/100/200/technics/" alt="Generic placeholder thumbnail"/>
-                    <div class="caption">
-                        <h4>{{pult.name}}</h4>
-                        <p class="desc">{{pult.snippet}}</p>
-                        <span class="label label-primary pull-right">Цена: {{pult.price}} грн.</span>                   
-                    </div>
-                </div>
-
-                <!---->
-                <div class="thumbnail products tech" ng-repeat="tech in techs | filter:query">
-                    <img src="http://lorempixel.com/100/200/transport/" alt="Generic placeholder thumbnail"/>
-                    <div class="caption">
-                        <h4>{{tech.name}}</h4>
-                        <p class="desc">{{tech.snippet}}</p>
-                        <span class="label label-primary pull-right">Цена: {{tech.price}} грн.</span>                   
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 text-center">
-                <dir-pagination-controls max-size="5" on-page-change="pageChangeHandler(newPageNumber)" boundary-links="true"  pagination-id="drinksPagination"></dir-pagination-controls>
-            </div>   
+            <div ng-view></div>  
         </div>
     </div>
 </div>

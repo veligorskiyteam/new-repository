@@ -1,0 +1,13 @@
+<div class="content">
+<div class="thumbnail products tech" dir-paginate="tech in techs | filter:query | itemsPerPage: 6" current-page="currentPage" pagination-id="techPagination">
+		<img src="http://lorempixel.com/100/200/transport/" alt="Generic placeholder thumbnail"/>
+		<div class="caption">
+			<h4>{{tech.name}}</h4>
+			<p class="desc">{{tech.snippet}}</p>
+			<span class="label label-primary pull-right">Цена: {{tech.price}} грн.</span>
+		</div>
+	</div>
+</div>
+<div class="col-md-12 text-center">
+	<dir-pagination-controls max-size="5" boundary-links="true"  pagination-id="techPagination"></dir-pagination-controls>
+</div> 

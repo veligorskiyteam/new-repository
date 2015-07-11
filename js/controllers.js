@@ -2,7 +2,7 @@
 
 /* Controllers */
 
-var App = angular.module('store', ['angularUtils.directives.dirPagination']);
+//var App = angular.module('store', ['angularUtils.directives.dirPagination']);
 
 /*App.controller('StoreCtrl', ['$scope', '$http',
   function ($scope, $http) {
@@ -11,7 +11,9 @@ var App = angular.module('store', ['angularUtils.directives.dirPagination']);
     });
 }]);
 */
-App.controller('StoreCtrl', function($scope) {
+var StoreControllers = angular.module('StoreControllers',[]);
+
+    StoreControllers.controller('PultListCtrl', function($scope) {
     $scope.pults = [
     {'name': 'Пульт 1',
      'snippet': 'Lorem ipsum dolor sit amet.',
@@ -92,26 +94,6 @@ App.controller('StoreCtrl', function($scope) {
      'snippet': 'Unde minima placeat, animi, reprehenderit.',
     'price': 150.00}
   ];
-  $scope.techs = [
-    {'name': 'Бытовая техника',
-     'snippet': 'Fast just got faster with Nexus S.',
- 	'price': 300.00},
-    {'name': 'Бытовая техника 2',
-     'snippet': 'The Next, Next Generation tablet.',
- 	'price': 510.00},
-    {'name': 'Бытовая техника 3',
-     'snippet': 'The Next, Next Generation tablet.',
- 	'price': 450.00},
-    {'name': 'Бытовая техника 4',
-     'snippet': 'Fast just got faster with Nexus S.',
- 	'price': 300.00},
-    {'name': 'Бытовая техника 5',
-     'snippet': 'The Next, Next Generation tablet.',
- 	'price': 510.00},
-    {'name': 'Бытовая техника 6',
-     'snippet': 'The Next, Next Generation tablet.',
- 	'price': 450.00}
-  ];
     $scope.currentPage = 1;
     $scope.pageSize = 10;
     $scope.pageChangeHandler = function(num) {
@@ -120,3 +102,45 @@ App.controller('StoreCtrl', function($scope) {
 
 });
 
+StoreControllers.controller('TechListCtrl', function($scope){
+  $scope.techs = [
+    {'name': 'Бытовая техника',
+     'snippet': 'Fast just got faster with Nexus S.',
+    'price': 300.00},
+    {'name': 'Бытовая техника 2',
+     'snippet': 'The Next, Next Generation tablet.',
+    'price': 510.00},
+    {'name': 'Бытовая техника 3',
+     'snippet': 'The Next, Next Generation tablet.',
+    'price': 450.00},
+    {'name': 'Бытовая техника 4',
+     'snippet': 'Fast just got faster with Nexus S.',
+    'price': 300.00},
+    {'name': 'Бытовая техника 5',
+     'snippet': 'The Next, Next Generation tablet.',
+    'price': 510.00},
+    {'name': 'Бытовая техника 6',
+     'snippet': 'The Next, Next Generation tablet.',
+    'price': 450.00},
+    {'name': 'Бытовая техника 7',
+     'snippet': 'The Next, Next Generation tablet.',
+    'price': 510.00},
+    {'name': 'Бытовая техника 8',
+     'snippet': 'The Next, Next Generation tablet.',
+    'price': 450.00},
+    {'name': 'Бытовая техника 9',
+     'snippet': 'Fast just got faster with Nexus S.',
+    'price': 300.00},
+    {'name': 'Бытовая техника 10',
+     'snippet': 'The Next, Next Generation tablet.',
+    'price': 510.00},
+    {'name': 'Бытовая техника 11',
+     'snippet': 'The Next, Next Generation tablet.',
+    'price': 450.00},
+    {'name': 'Бытовая техника 12',
+     'snippet': 'The Next, Next Generation tablet.',
+    'price': 450.00}
+  ];
+    $scope.currentPage = 1;
+    $scope.pageSize = 10;
+});

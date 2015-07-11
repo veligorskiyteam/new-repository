@@ -4,14 +4,14 @@
 
 .pults{
 	width: 250px;
-	display: none;
+	//display: none;
 	max-height: 355px;
 	overflow: hidden;
 }
 
 .tech{
 	width: 250px;
-	display: none;
+	//display: none;
 	max-height: 355px;
 	overflow: hidden;	
 }
