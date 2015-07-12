@@ -4,20 +4,18 @@ $(function(){
     $buttons.on('click', function(){
         $buttons.removeClass('active');
         $(this).addClass('active');
-        //$sub.removeClass('vis-content');
-
     });
-    $('#contact').click(function(e){
+    $('#contact').on('click', function(e){
         e.preventDefault();
-        $(this).toggleClass('active').toggleClass('menuClick');
-        $('.information').slideToggle(800);
+        $(this).toggleClass('active');
+        $('.pop').fadeToggle();
     });
     $('#1b').on('click', function(){
-        $sub.not('.subMenu1').removeClass('vis-content');
-        $('.subMenu1').toggleClass('vis-content');
+        $sub.not('.subMenu1').slideUp(600);
+        $('.subMenu1').slideToggle(600);
     });
     $('#2b').on('click', function(){
-        $sub.not('.subMenu2').removeClass('vis-content');
-        $('.subMenu2').toggleClass('vis-content');
+        $sub.not('.subMenu2').slideUp(600);
+        $('.subMenu2').slideToggle(600);
     });
 });

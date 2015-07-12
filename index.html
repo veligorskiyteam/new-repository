@@ -17,18 +17,21 @@
   <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <div class="container">
-        <nav class="navbar navbar-default">
+<div class="container">
+    <nav class="navbar navbar-default">
         <a class="navbar-brand" href="#"><span class="logo">Pultcher</span></a>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
-              <ul class="nav navbar-nav">
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
+            <ul class="nav navbar-nav">
                 <li  id="contact"><a href="#">Контакты</a>
-                    <div class="information">
-                        <p><b>Владелец</b> : Тарасевич Андрей Петрович</p>
-                        <p><b>Моб.</b> : +38(093)-500-42-28</p>
-                        <p class="mob1">+38(067)-70-44-773</p>
-                        <p class="mob1">+38(068)-38-50-317</p>
-                        <p><b>email</b> : Radioatar@tambler.ru</p>
+                    <div class="pop bottom">
+                        <div class="arrow"></div>
+                        <div class="pop-content">
+                            <p><b>Владелец</b> : Тарасевич Андрей Петрович</p>
+                            <p><b>Моб.</b> : +38(093)-500-42-28</p>
+                            <p class="mob">+38(067)-70-44-773</p>
+                            <p class="mob">+38(068)-38-50-317</p>
+                            <p><b>email</b> : Radioatar@tambler.ru</p>
+                        </div>
                     </div>
                 </li>
                 <li><a href="#">О нас</a></li>
@@ -41,7 +44,7 @@
         <div class="col-md-3">
             <input type="text" ng-model="query" class="form-control search-input" placeholder="Поиск по категориям..." >
             <div class="list-group">
-                <a href="#/pults" id="1b" class="list-group-item left-menu">Пульты</a>
+                <a href="#/pults" ng-click="to=''" id="1b" class="list-group-item left-menu">Пульты</a>
                     <div class="list-group submenu subMenu1" id="">
                         <a class="list-group-item filter-to" href ng-click="to='aiwa'">Для AIWA</a>
                         <a class="list-group-item filter-to" href ng-click="to='AKAI'">Для AKAI</a>
@@ -64,7 +67,6 @@
             <div ng-view></div>  
         </div>
     </div>
-
 </div>
 <script src="js/scripts.js"></script>
 </body>
