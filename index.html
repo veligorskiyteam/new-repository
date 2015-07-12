@@ -41,30 +41,21 @@
         <div class="col-md-3">
             <input type="text" ng-model="query" class="form-control search-input" placeholder="Поиск по категориям..." >
             <div class="list-group">
-                <a href="#/pults" id="1b" class="list-group-item left-menu active">Пульты</a>
-                    <ul class="subMenu1">
-                        <li><a href="#">Position1</a></li>
-                        <li><a href="#">Position2</a></li>
-                        <li><a href="#">Position3</a></li>
-                        <li><a href="#">Position4</a></li>
-                        <li><a href="#">Position5</a></li>
-                    </ul>
+                <a href="#/pults" id="1b" class="list-group-item left-menu">Пульты</a>
+                    <div class="list-group submenu subMenu1" id="">
+                        <a class="list-group-item filter-to" href ng-click="to='aiwa'">Для AIWA</a>
+                        <a class="list-group-item filter-to" href ng-click="to='AKAI'">Для AKAI</a>
+                        <a class="list-group-item filter-to" href ng-click="to='deawoo'">Для Deawoo</a>
+                        <a class="list-group-item filter-to" href ng-click="to='funai'">Для Funai</a>
+                    </div>
                 <a href="#/techs" id="2b" class="list-group-item left-menu">Бытовая Техника</a>
-                     <ul class="subMenu2">
-                        <li><a href="#">Position1</a></li>
-                        <li><a href="#">Position2</a></li>
-                        <li><a href="#">Position3</a></li>
-                        <li><a href="#">Position4</a></li>
-                        <li><a href="#">Position5</a></li>
-                    </ul>
+                    <div class="list-group submenu subMenu2">
+                        <a class="list-group-item filter-to" href ng-click="">Lorem ipsum.</a>
+                        <a class="list-group-item filter-to" href ng-click="">Ipsum dolor</a>
+                        <a class="list-group-item filter-to" href ng-click="">Lorem ipsum dolor.</a>
+                        <a class="list-group-item filter-to" href ng-click="">Ipsum dolor sit amet.</a>
+                    </div>
                 <a href="#" id="3b" class="list-group-item left-menu">Электроника</a>
-                 <ul class="subMenu3">
-                        <li><a href="#">Position1</a></li>
-                        <li><a href="#">Position2</a></li>
-                        <li><a href="#">Position3</a></li>
-                        <li><a href="#">Position4</a></li>
-                        <li><a href="#">Position5</a></li>
-                    </ul>
                 <a href="#" class="list-group-item left-menu">Адаптеры питания</a>
                 <a href="#" class="list-group-item left-menu">Вспомогательное оборудование и материалы</a>
             </div>
@@ -73,6 +64,7 @@
             <div ng-view></div>  
         </div>
     </div>
+
 </div>
 <script src="js/scripts.js"></script>
 </body>

@@ -1,0 +1,866 @@
+[
+  {
+    "id":" 0101",
+    "name":" 1-1  AIWA RC-AVT02   [TV]   (ic)",
+    "price":"2,8",
+    "FIELD4":"2,1",
+    "FIELD5":"",
+    "to":"aiwa"
+  },
+  {
+    "id":" 0103",
+    "name":" 1-3   AIWA RC-6VT05   [TV]   (ic)",
+    "price":"2,6",
+    "FIELD4":"1,95",
+    "FIELD5":"1,69",
+    "to":"aiwa"
+  },
+  {
+    "id":" 0104",
+    "name":" 1-4   AIWA RC-6VT06  [TV]   (ic)",
+    "price":"2,6",
+    "FIELD4":"1,95",
+    "FIELD5":"1,69",
+    "to":"aiwa"
+  },
+  {
+    "id":" 0107",
+    "name":" 1-7   AIWA RC-T1400 KEAE   [TV;VCR]",
+    "price":"4,4",
+    "FIELD4":"3,3",
+    "FIELD5":"2,86",
+    "to":"aiwa"
+  },
+  {
+    "id":" 0109",
+    "name":" 1-9   AIWA RC-TC141KE    [TV]  (ic)",
+    "price":"2,7",
+    "FIELD4":"2,025",
+    "FIELD5":"1,755",
+    "to":"aiwa"
+  },
+  {
+    "id":" 0109-",
+    "name":" 1-9-  AIWA RC-TC141KE   [TV]",
+    "price":"2,3",
+    "FIELD4":"1,725",
+    "FIELD5":"1,495",
+    "to":"aiwa"
+  },
+  {
+    "id":" 0110",
+    "name":" 1-10   Aiwa RC-ZAS02  (ic) � ���. 業���  5 ��᪮�",
+    "price":"6,1",
+    "FIELD4":"4,575",
+    "FIELD5":"3,965",
+    "to":"aiwa"
+  },
+  {
+    "id":" 0113",
+    "name":" 1-13    AIWA RC-TT1420 KER   [TV;VCR]",
+    "price":"3,9",
+    "FIELD4":"2,925",
+    "FIELD5":"2,535",
+    "to":"aiwa"
+  },
+  {
+    "id":" 0114",
+    "name":" 1-14    AIWA RC-TV2  (ic)",
+    "price":"4,1",
+    "FIELD4":"3,075",
+    "FIELD5":"2,665",
+    "to":"aiwa"
+  },
+  {
+    "id":" 0130",
+    "name":" 1-30   AIWA RC-ZVT03 (ic)",
+    "price":"2,7",
+    "FIELD4":"2,025",
+    "FIELD5":"1,755",
+    "to":"aiwa"
+  },
+  {
+    "id":" 0131",
+    "name":" 1-31  AIWA universal RM-053N (������ RC-ZVT03(13))",
+    "price":"3,7",
+    "FIELD4":"2,775",
+    "FIELD5":"2,405",
+    "to":"aiwa"
+  },
+  {
+    "id":" 0201",
+    "name":" 2-1    AKAI GK21A1-C12, WEST ACH-T-1, AKIRA  (ic)",
+    "price":"3,2",
+    "FIELD4":"2,4",
+    "FIELD5":"2,08",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0201-",
+    "name":" 2-1-  WEST  GK21A1-C12  (2119)    AKIRA ACH-T-1 [TV]",
+    "price":"2,5",
+    "FIELD4":"1,875",
+    "FIELD5":"1,625",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0202",
+    "name":" 2-2   AKAI ABL-105 ( XU-5251C-N , KONKA 52H8 )  T81001  [TV]   (ic)",
+    "price":"2,7",
+    "FIELD4":"2,025",
+    "FIELD5":"1,755",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0202A",
+    "name":" 2-2A  AKAI ABL-105  ����� with LOCK !!   ( XU-5251C-N , KONKA 52H8 )  T81001  [TV]",
+    "price":"2,5",
+    "FIELD4":"1,875",
+    "FIELD5":"1,625",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0203",
+    "name":" 2-3    AKAI RC-51A   [TV]   (ic)",
+    "price":"2,8",
+    "FIELD4":"2,1",
+    "FIELD5":"1,82",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0203-",
+    "name":" 2-3-    AKAI RC-51A   [TV]",
+    "price":"2,3",
+    "FIELD4":"1,725",
+    "FIELD5":"1,495",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0204",
+    "name":" 2-4   AKAI RC-61A",
+    "price":"3,9",
+    "FIELD4":"2,925",
+    "FIELD5":"2,535",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0205",
+    "name":" 2-5   AKAI 4GA1-901, Polar RC-8897, General  29FS14,Elenberg 7BJ9-1023, Cameron 7BJ9-1043/RS09-8891A    [TV]    (ic)",
+    "price":"2,7",
+    "FIELD4":"2,025",
+    "FIELD5":"1,755",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0206",
+    "name":" 2-6     AKAI  RC-N1A   [TV]    (ic)",
+    "price":"3,3",
+    "FIELD4":"2,475",
+    "FIELD5":"2,145",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0207",
+    "name":" 2-7    AKAI  RC-N2A  [TV]    (ic)",
+    "price":"3,4",
+    "FIELD4":"2,55",
+    "FIELD5":"2,21",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0209",
+    "name":" 2-9   AKAI  RC-V7A    [TV,VCR]",
+    "price":"4",
+    "FIELD4":"3",
+    "FIELD5":"2,6",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0213",
+    "name":" 2-13   AKAI RC-W001TV POLAR, TCL, HORIZONT    [TV]   (ic)",
+    "price":"3,2",
+    "FIELD4":"2,4",
+    "FIELD5":"2,08",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0214",
+    "name":" 2-14   AKAI RM-610  RM-611              [LCD TV]  (ic)",
+    "price":"5,4",
+    "FIELD4":"4,05",
+    "FIELD5":"3,51",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0215",
+    "name":" 2-15    AKAI ZD3279   (14CTN50BG)                    [TV]  (ic)",
+    "price":"6",
+    "FIELD4":"4,5",
+    "FIELD5":"3,9",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0216",
+    "name":" 2-16  AKAI TV  RM-081F 㭨���ᠫ, ������� ������ RC-V7A, 8 ����� (ic)",
+    "price":"3,8",
+    "FIELD4":"2,85",
+    "FIELD5":"2,47",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0217",
+    "name":" 2-17  Akai A0001011 (ic) BLACK",
+    "price":"5,2",
+    "FIELD4":"3,9",
+    "FIELD5":"3,38",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0218",
+    "name":" 2-18   Akai A0001012 (ic) SILVER",
+    "price":"5,2",
+    "FIELD4":"3,9",
+    "FIELD5":"3,38",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0219",
+    "name":" 2-19   Akai A4001031, Supra LC1504  (ic)",
+    "price":"4,2",
+    "FIELD4":"3,15",
+    "FIELD5":"2,73",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0220",
+    "name":" 2-20   Akai A4001032  (ic)",
+    "price":"5,2",
+    "FIELD4":"3,9",
+    "FIELD5":"3,38",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0221",
+    "name":" 2-21   Akai A4001033  (ic)",
+    "price":"7",
+    "FIELD4":"5,25",
+    "FIELD5":"4,55",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0222",
+    "name":" 2-22    Akai LTA-15A15M (LE-19A08G), Rolsen RL-19L1005U, RL-22/23L1005UF",
+    "price":"6,2",
+    "FIELD4":"4,65",
+    "FIELD5":"4,03",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0224",
+    "name":" 2-24  CHANGHONG GHK-4421A (JKT-62#-A1) VR LT19L01V / AKAI",
+    "price":"6",
+    "FIELD4":"4,5",
+    "FIELD5":"3,9",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0225",
+    "name":" 2-25  Akai  A0001013  TV  (ic)",
+    "price":"5,2",
+    "FIELD4":"3,9",
+    "FIELD5":"3,38",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0226",
+    "name":" 2-26   Akai  LEA-19V07P   [LED TV]  (ic)",
+    "price":"8,8",
+    "FIELD4":"6,6",
+    "FIELD5":"5,72",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0227",
+    "name":" 2-27  Akai CX-507 ic HYUNDAI H-LED19V13 Helix",
+    "price":"8,4",
+    "FIELD4":"6,3",
+    "FIELD5":"5,46",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0228",
+    "name":" 2-28  CHANGHONG HOF-55D1 3D LCD NEW (ic)",
+    "price":"8,6",
+    "FIELD4":"6,45",
+    "FIELD5":"5,59",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0229",
+    "name":" 2-29 Akai A1001030 (ic) LCD TV",
+    "price":"3,4",
+    "FIELD4":"2,55",
+    "FIELD5":"2,21",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0230",
+    "name":" 2-30 Akai A3001011 (ic) LCD TV",
+    "price":"5,8",
+    "FIELD4":"4,35",
+    "FIELD5":"3,77",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0231",
+    "name":" 2-31 Akai P6842/DV4311/6342/6840/ Sitronics DVD3 DVD-�����  (ic)",
+    "price":"3,4",
+    "FIELD4":"2,55",
+    "FIELD5":"2,21",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0232",
+    "name":" 2-32 Akai SLP-006P (ic) LCD TV",
+    "price":"6,4",
+    "FIELD4":"4,8",
+    "FIELD5":"4,16",
+    "to":"AKAI"
+  },
+  {
+    "id":" 0301",
+    "name":" 3-1   DAEWOO R-18H43    (ic)",
+    "price":"3,1",
+    "FIELD4":"2,325",
+    "FIELD5":"2,015",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0301-",
+    "name":" 3-1-   DAEWOO R-18H43",
+    "price":"2,8",
+    "FIELD4":"2,1",
+    "FIELD5":"1,82",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0302",
+    "name":" 3-2   DAEWOO DTA1414   [TV]",
+    "price":"3,5",
+    "FIELD4":"2,625",
+    "FIELD5":"2,275",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0303",
+    "name":" 3-3   DAEWOO R-9A",
+    "price":"4,8",
+    "FIELD4":"3,6",
+    "FIELD5":"3,12",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0304",
+    "name":" 3-4   DAEWOO R-18A07 (SUPRA 5170, AMKOL)    [TV]    (ic)",
+    "price":"3,1",
+    "FIELD4":"2,325",
+    "FIELD5":"2,015",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0304-",
+    "name":" 3-4-   DAEWOO R-18A07 (SUPRA 5170, AMKOL)   [TV]",
+    "price":"2,8",
+    "FIELD4":"2,1",
+    "FIELD5":"1,82",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0306",
+    "name":" 3-6    DAEWOO R-22   [TV]    (ic)  HU",
+    "price":"3,3",
+    "FIELD4":"2,475",
+    "FIELD5":"2,145",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0307",
+    "name":" 3-7   DAEWOO R-44C07    [TV]    (ic)",
+    "price":"2,8",
+    "FIELD4":"2,1",
+    "FIELD5":"1,82",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0308",
+    "name":" 3-8   DAEWOO R-25 (ic)",
+    "price":"2,9",
+    "FIELD4":"2,175",
+    "FIELD5":"1,885",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0308-",
+    "name":" 3-8-  DAEWOO R-25   [TV]",
+    "price":"2,6",
+    "FIELD4":"1,95",
+    "FIELD5":"1,69",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0310",
+    "name":" 3-10   DAEWOO R-26                        [TV]",
+    "price":"4",
+    "FIELD4":"3",
+    "FIELD5":"2,6",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0312",
+    "name":" 3-12    DAEWOO R-28B03    [TV]    (ic)",
+    "price":"2,8",
+    "FIELD4":"2,1",
+    "FIELD5":"1,82",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0312-",
+    "name":" 3-12-   DAEWOO R-28B03   [TV]",
+    "price":"2,4",
+    "FIELD4":"1,8",
+    "FIELD5":"1,56",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0313",
+    "name":" 3-13   DAEWOO R-28B04    [TV]   (ic)",
+    "price":"2,8",
+    "FIELD4":"2,1",
+    "FIELD5":"1,82",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0313-",
+    "name":" 3-13-   DAEWOO R-28B04    [TV]",
+    "price":"2,6",
+    "FIELD4":"1,95",
+    "FIELD5":"1,69",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0314",
+    "name":" 3-14   DAEWOO  R52N20",
+    "price":"4,4",
+    "FIELD4":"3,3",
+    "FIELD5":"2,86",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0315",
+    "name":" 3-15   DAEWOO R-48A01   TV  (ic)",
+    "price":"2,8",
+    "FIELD4":"2,1",
+    "FIELD5":"1,82",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0315-",
+    "name":" 3-15-   DAEWOO R-48A01  TV",
+    "price":"2,5",
+    "FIELD4":"1,875",
+    "FIELD5":"1,625",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0316",
+    "name":" 3-16   DAEWOO R-52C03",
+    "price":"4,4",
+    "FIELD4":"3,3",
+    "FIELD5":"2,86",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0317",
+    "name":" 3-17   DAEWOO R-48A08",
+    "price":"3,4",
+    "FIELD4":"2,55",
+    "FIELD5":"2,21",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0318",
+    "name":" 3-18   DAEWOO R-44DS01 tv/sat �����",
+    "price":"4,4",
+    "FIELD4":"3,3",
+    "FIELD5":"2,86",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0319",
+    "name":" 3-19   DAEWOO R-40A01   [TV]    (ic)",
+    "price":"2,6",
+    "FIELD4":"1,95",
+    "FIELD5":"1,69",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0319-",
+    "name":" 3-19-   DAEWOO R-40A01   [TV]",
+    "price":"2,3",
+    "FIELD4":"1,725",
+    "FIELD5":"1,495",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0320",
+    "name":" 3-20   DAEWOO R-40B02   [TV]",
+    "price":"2,3",
+    "FIELD4":"1,725",
+    "FIELD5":"1,495",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0321",
+    "name":" 3-21   DAEWOO R-40B07   [TV]",
+    "price":"2,4",
+    "FIELD4":"1,8",
+    "FIELD5":"1,56",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0322",
+    "name":" 3-22   DAEWOO R-28A01  TV",
+    "price":"4,4",
+    "FIELD4":"3,3",
+    "FIELD5":"2,86",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0323",
+    "name":" 3-23   DAEWOO R-40A10   [TV]    (ic)",
+    "price":"2,7",
+    "FIELD4":"2,025",
+    "FIELD5":"1,755",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0324",
+    "name":" 3-24     DAEWOO R-40A15                 [TV]",
+    "price":"2,8",
+    "FIELD4":"2,1",
+    "FIELD5":"1,82",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0325",
+    "name":" 3-25   DAEWOO NEW (START  PROVISION)  ABL-30       [TV]    (ic)",
+    "price":"3,2",
+    "FIELD4":"2,4",
+    "FIELD5":"2,08",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0325-",
+    "name":" 3-25-   DAEWOO NEW (START  PROVISION)  ABL-30       [TV]",
+    "price":"2,6",
+    "FIELD4":"1,95",
+    "FIELD5":"1,69",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0327",
+    "name":" 3-27   DAEWOO R-49C07 LCD    (ic)",
+    "price":"2,9",
+    "FIELD4":"2,175",
+    "FIELD5":"1,885",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0329",
+    "name":" 3-29   Daewoo R49C10 plazma  DTM-2930, KR2930, KR29M7, KR29S7  [TV]",
+    "price":"3,9",
+    "FIELD4":"2,925",
+    "FIELD5":"2,535",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0330",
+    "name":" 3-30   DAEWOO R-48A02   [TV]",
+    "price":"3,4",
+    "FIELD4":"2,55",
+    "FIELD5":"2,21",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0332",
+    "name":" 3-32   DAEWOO HYDFSR-0048UOCD    [TV]     (ic)",
+    "price":"2,6",
+    "FIELD4":"1,95",
+    "FIELD5":"1,69",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0333",
+    "name":" 3-33   DAEWOO (AVEST) HYDFSR- 0048R Nobel Siesta-241  7461-103 (ic)",
+    "price":"3,8",
+    "FIELD4":"2,85",
+    "FIELD5":"2,47",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0334",
+    "name":" 3-34   DAEWOO (AVEST) HYDFSR-0048RAG (ic)",
+    "price":"4",
+    "FIELD4":"3",
+    "FIELD5":"2,6",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0335",
+    "name":" 3-35   DAEWOO (AVEST) HYDFSR-0076NO",
+    "price":"4",
+    "FIELD4":"3",
+    "FIELD5":"2,6",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0336",
+    "name":" 3-36    DAEWOO R-40A06",
+    "price":"4,8",
+    "FIELD4":"3,6",
+    "FIELD5":"3,12",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0337",
+    "name":" 3-37   DAEWOO RM-531D 㭨���ᠫ����, ������ R40A01    (ic)  HQ",
+    "price":"3,8",
+    "FIELD4":"2,85",
+    "FIELD5":"2,47",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0338",
+    "name":" 3-38     DAEWOO RM-515D 㭨���ᠫ���� � ��������     (R44C07)    (ic)   HQ",
+    "price":"3,5",
+    "FIELD4":"2,625",
+    "FIELD5":"2,275",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0339",
+    "name":" 3-39    DAEWOO RM-675DC ������ R-49�10   ��஡��  (ic)   HQ",
+    "price":"3,6",
+    "FIELD4":"2,7",
+    "FIELD5":"2,34",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0340",
+    "name":" 3-40 DAEWOO RM-3317 㭨���ᠫ���� � ��������          (R44C07)",
+    "price":"4,7",
+    "FIELD4":"3,525",
+    "FIELD5":"3,055",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0341",
+    "name":" 3-41    DAEWOO R-55G10    [TV]     (ic)",
+    "price":"5",
+    "FIELD4":"3,75",
+    "FIELD5":"3,25",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0342",
+    "name":" 3-42    Daewoo  R-55H11   ( ic)",
+    "price":"7,2",
+    "FIELD4":"5,4",
+    "FIELD5":"4,68",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0344",
+    "name":" 3-44  DAEWOO R-49A01 (ic)",
+    "price":"5",
+    "FIELD4":"3,75",
+    "FIELD5":"3,25",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0346",
+    "name":" 3-46    DAEWOO R-59A01              [TV]          (ic)",
+    "price":"5,5",
+    "FIELD4":"4,125",
+    "FIELD5":"3,575",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0347",
+    "name":" 3-47    Daewoo R-59B01/R-59B02    (ic)",
+    "price":"5,6",
+    "FIELD4":"4,2",
+    "FIELD5":"3,64",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0348",
+    "name":" 3-48  DAEWOO RM-827DC ������ R-55G10   �������  (ic)  HQ",
+    "price":"5,1",
+    "FIELD4":"3,825",
+    "FIELD5":"3,315",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0349",
+    "name":" 3-49  DAEWOO R-47B04",
+    "price":"4,4",
+    "FIELD4":"3,3",
+    "FIELD5":"2,86",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0350",
+    "name":" 3-50  Daewoo RC-DWT01-V01 (ic)",
+    "price":"6,8",
+    "FIELD4":"5,1",
+    "FIELD5":"4,42",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0352",
+    "name":" 3-52  Daewoo R-59C01 Plazma ic",
+    "price":"6",
+    "FIELD4":"4,5",
+    "FIELD5":"3,9",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0353",
+    "name":" 3-53   DAEWOO R-55E05 DPP-42A3V, DPP-32A2   [PLASMA]  (ic)",
+    "price":"8,9",
+    "FIELD4":"6,675",
+    "FIELD5":"5,785",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0354",
+    "name":" 3-54  Daewoo T21L08 (ic) LCD TV",
+    "price":"4,4",
+    "FIELD4":"3,3",
+    "FIELD5":"2,86",
+    "to":"deawoo"
+  },
+  {
+    "id":" 0402",
+    "name":" 4-2  FUNAI  MK-2     [TV]   (ic)",
+    "price":"3",
+    "FIELD4":"2,25",
+    "FIELD5":"1,95",
+    "to":"funai"
+  },
+  {
+    "id":" 0402-",
+    "name":" 4-2-  FUNAI  MK-2    [TV]",
+    "price":"2,4",
+    "FIELD4":"1,8",
+    "FIELD5":"1,56",
+    "to":"funai"
+  },
+  {
+    "id":" 0403",
+    "name":" 4-3    FUNAI MK7/8  (ic)",
+    "price":"2,4",
+    "FIELD4":"1,8",
+    "FIELD5":"1,56",
+    "to":"funai"
+  },
+  {
+    "id":" 0403-",
+    "name":" 4-3-    FUNAI MK7/8",
+    "price":"2",
+    "FIELD4":"1,5",
+    "FIELD5":"1,3",
+    "to":"funai"
+  },
+  {
+    "id":" 0404",
+    "name":" 4-4   FUNAI MK7/8    TXT   (ic)",
+    "price":"2,6",
+    "FIELD4":"1,95",
+    "FIELD5":"1,69",
+    "to":"funai"
+  },
+  {
+    "id":" 0405",
+    "name":" 4-5   FUNAI MK7/8   [TV,VCR]    (ic)",
+    "price":"2,6",
+    "FIELD4":"1,95",
+    "FIELD5":"1,69",
+    "to":"funai"
+  },
+  {
+    "id":" 0409-",
+    "name":" 4-9-   FUNAI 2100 MK10    [TV]  � ���",
+    "price":"2,2",
+    "FIELD4":"1,65",
+    "FIELD5":"1,43",
+    "to":"funai"
+  },
+  {
+    "id":" 0410",
+    "name":" 4-10   FUNAI 2100 MK10  ��� ��� (ic)",
+    "price":"2,5",
+    "FIELD4":"1,875",
+    "FIELD5":"1,625",
+    "to":"funai"
+  },
+  {
+    "id":" 0411",
+    "name":" 4-11  FUNAI 2100A MK11    [TV]",
+    "price":"2,1",
+    "FIELD4":"1,575",
+    "FIELD5":"1,365",
+    "to":"funai"
+  },
+  {
+    "id":" 0412",
+    "name":" 4-12   FUNAI 2100A MK12    [TV]      (ic)",
+    "price":"2,7",
+    "FIELD4":"2,025",
+    "FIELD5":"1,755",
+    "to":"funai"
+  },
+  {
+    "id":" 0412-",
+    "name":" 4-12-   FUNAI 2100A MK12    [TV]",
+    "price":"2,1",
+    "FIELD4":"1,575",
+    "FIELD5":"1,365",
+    "to":"funai"
+  },
+  {
+    "id":" 0413",
+    "name":" 4-13  FUNAI KV-XS21HD (S2100PF, S2500PF) SITRONICS KV-SX21HD (ic)",
+    "price":"4,6",
+    "FIELD4":"3,45",
+    "FIELD5":"2,99",
+    "to":"funai"
+  },
+  {
+    "id":" 0414",
+    "name":" 4-14  FUNAI KV-XS21HD-1 (ic) (S2900PF) (����.KV-XS21HD)",
+    "price":"5,4",
+    "FIELD4":"4,05",
+    "FIELD5":"3,51",
+    "to":"funai"
+  },
+  {
+    "id":" 0415",
+    "name":" 4-15  FUNAI RM-014F 㭨���ᠫ, �������, ������ MK7.8 ���, 4 ����  HQ",
+    "price":"3,6",
+    "FIELD4":"2,7",
+    "FIELD5":"2,34",
+    "to":"funai"
+  }
+]

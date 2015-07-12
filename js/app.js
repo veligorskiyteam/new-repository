@@ -18,6 +18,6 @@ var App = angular.module('store', [
           controller: 'TechListCtrl'
         }).
         otherwise({
-          redirectTo: '/'
+          templateUrl: 'products/home.html'
         });
   }]);

@@ -1,9 +1,10 @@
 <div class="content">
-	<div class="thumbnail products pults vis-content"  dir-paginate="pult in pults | filter:query | itemsPerPage: 6" current-page="currentPage" pagination-id="pultsPagination">
+	<div class="thumbnail products pults vis-content"  dir-paginate="pult in pults | filter:{to:to,$:query} | itemsPerPage: 6" current-page="currentPage" pagination-id="pultsPagination">
 		<img src="http://lorempixel.com/100/200/technics/" alt="Generic placeholder thumbnail"/>
 		<div class="caption">
-			<h4>{{pult.name}}</h4>
-			<p class="desc">{{pult.snippet}}</p>
+			<h5>{{pult.name}}</h5>
+			<p>Артикул: {{pult.id}}</p>
+			<p>Для техники: {{pult.to}}</p>
 			<span class="label label-primary pull-right">Цена: {{pult.price}} грн.</span>                   
 		</div>
 	</div>
