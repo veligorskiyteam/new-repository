@@ -17,6 +17,9 @@ var App = angular.module('store', [
           templateUrl: 'products/techs.html',
           controller: 'TechListCtrl'
         }).
+        when('/about-pults',{
+          templateUrl: 'products/AboutPults.html'
+        }).
         otherwise({
           templateUrl: 'products/home.html'
         });
