@@ -20,6 +20,9 @@ var App = angular.module('store', [
         when('/about-pults',{
           templateUrl: 'products/AboutPults.html'
         }).
+        when('/reviews',{
+          templateUrl: 'products/reviews.html'
+        }).
         otherwise({
           templateUrl: 'products/home.html'
         });

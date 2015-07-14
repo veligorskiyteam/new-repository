@@ -18,7 +18,7 @@ var StoreControllers = angular.module('StoreControllers',[]);
       $scope.pults = data;
     });
     $scope.currentPage = 1;
-    $scope.pageSize = 10;
+    //$scope.pageSize = 9;
 }]);
 
 StoreControllers.controller('TechListCtrl', ['$scope', function($scope){
@@ -77,7 +77,7 @@ StoreControllers.controller('TechListCtrl', ['$scope', function($scope){
     createdOn: 1397490980837}
     ];
     $scope.currentPage = 1;
-    $scope.pageSize = 10;
+    //$scope.pageSize = 10;
 }]);
 
 StoreControllers.controller('ReviewCtrl', function($scope){

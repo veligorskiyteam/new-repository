@@ -1,17 +1,16 @@
+html, body {
+  height: 100%;
+}
+
 .carousel-indicators {
   bottom: 0px !important;
 }
 
-.pults{
-	width: 250px;
-	max-height: 355px;
-	overflow: hidden;
-}
-
+.pults,
 .tech{
 	width: 250px;
 	max-height: 355px;
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 .content{
@@ -25,16 +24,16 @@
 	margin: 20px 0;
 }
 
-.subMenu1,.subMenu2,.subMenu3{
+.subMenu1,
+.subMenu2,
+.subMenu3{
 	list-style: square;
 	font-size: 12px;
 	margin-bottom: 0px;
 	position: relative;
 	display: none;
 }
-.vis-content{
-	display: block;
-}
+
 .filter-to{
 	margin-bottom: -1px;
 	border-top: 0;
@@ -53,18 +52,22 @@
   border-bottom-left-radius: 4px;
 }
 
-.subMenu1 a:hover,.subMenu2 a:hover,.subMenu3 a:hover{
-	color:red;
+.subMenu1 a:hover,
+.subMenu2 a:hover,
+.subMenu3 a:hover{
+	color: #428bca;
 }
 
 .caption h5{
 	height: 30px;
 	font-weight: bold;
 }
+
 .caption p{
 	padding: 0;
 	margin: 0;
 }
+
 .desc{
 	min-height: 40px;
 	max-height: 40px;
@@ -76,6 +79,7 @@
 	height: 55px;
 	background: red;
 }
+
 #contact{
 	position: relative;
 }
@@ -89,11 +93,13 @@
 	font-size: 2.25em;
 	color:#0AADC9;
 }
+
 .search-input{
 	/*font-style: italic;*/
 	font-family: 'Armata', sans-serif;
 	font-size: 1.1em;
 }
+
 .pop {
   position: absolute;
   top: 100%;
@@ -112,12 +118,15 @@
   -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
           box-shadow: 0 5px 10px rgba(0, 0, 0, .2);
 }
+
 .pop.bottom {
   margin-top: 10px;
 }
+
 .pop-content {
   padding: 9px 14px;
 }
+
 .pop > .arrow,
 .pop > .arrow:after {
   position: absolute;
@@ -127,13 +136,16 @@
   border-color: transparent;
   border-style: solid;
 }
+
 .pop > .arrow {
   border-width: 11px;
 }
+
 .pop > .arrow:after {
   content: "";
   border-width: 10px;
 }
+
 .pop.bottom > .arrow {
   top: -11px;
   left: 16%;
@@ -142,6 +154,7 @@
   border-bottom-color: #999;
   border-bottom-color: rgba(0, 0, 0, .25);
 }
+
 .pop.bottom > .arrow:after {
   top: 1px;
   margin-left: -10px;
@@ -155,21 +168,21 @@
 	font-weight: 600;
 }
 
-html, body {
-  height: 100%;
-}
 .wrap {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -115px; 
 }
+
 .wrap:after {
   content: "";
   display: block;
 }
+
 .site-footer, .wrap:after {
   height: 115px; 
 }
+
 .site-footer {
   background: #f5f5f5;
   position: relative;
@@ -177,6 +190,7 @@ html, body {
   border-radius: 5px;
   padding: 10px;
 }
+
 .footer-cpy{
 	background: #eeeeee ;
 	position: absolute;
@@ -185,23 +199,12 @@ html, body {
 	width: 100%;
 	padding: 10px;
 }
+.reviews{
+	margin: 20px 0;
+}
+
 .reviews ul{
 	list-style: none;
-}
-
-.mob1{
-	margin-left: 50px;
-}
-
-.logo{
-	font-family: 'Sigmar One', cursive;
-	font-size: 2.25em;
-	color:#0AADC9;
-}
-.search-input{
-	/*font-style: italic;*/
-	font-family: 'Armata', sans-serif;
-	font-size: 1.1em;
 }
 
 .imgRew{
@@ -212,6 +215,7 @@ html, body {
 	margin-right: 40px;
 
 }
+
 .comText{
 	display: inline-block;
 	float: left;
@@ -222,37 +226,37 @@ html, body {
 	margin: 8% 0;
 
 }
+
 .comment{
 	margin: 0 auto 40px;
 	height: 152px;
 
 }
+
 .comment {
   height: 150px;;
 }
+
 .bm{
 	width: 230px;
 }
+
 .carousel-inner .item .imgCtrlSlider{
 	height: 160px;
 	width: 260px ;
 }
+
 .mainImg{
 	background:url(../img/att_3007.jpg) no-repeat 0px -73px;
 	height: 160px;
 	background-size: cover;
 	float: left;
 }
+
 .AboutConsoles{
 	display: block;
 }
-footer{
-	margin: 0 auto;
-	background: #eee;
-	height: 150px;
-	padding: 20px 50px;
-	border-radius: 5px 5px 0 0;
-}
+
 .CopR{
 	font-size:1.5em;
 }

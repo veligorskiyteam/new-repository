@@ -1,5 +1,5 @@
 <div class="content">
-	<div class="thumbnail products pults vis-content"  dir-paginate="pult in pults | filter:{to:to,$:query} | itemsPerPage: 6" current-page="currentPage" pagination-id="pultsPagination">
+	<div class="thumbnail products pults vis-content"  dir-paginate="pult in pults | filter:{to:to,$:query} | itemsPerPage: 9" current-page="currentPage" pagination-id="pultsPagination">
 		<img src="http://lorempixel.com/100/200/technics/" alt="Generic placeholder thumbnail"/>
 		<div class="caption">
 			<h5>{{pult.name}}</h5>
@@ -10,5 +10,5 @@
 	</div>
 </div>
 <div class="col-md-12 text-center">
-<dir-pagination-controls max-size="5" boundary-links="true"  pagination-id="pultsPagination"></dir-pagination-controls>
+	<dir-pagination-controls max-size="5" boundary-links="true"  pagination-id="pultsPagination"></dir-pagination-controls>
 </div> 
