@@ -154,3 +154,97 @@
 	text-transform: uppercase;
 	font-weight: 600;
 }
+.information{
+	background: url(../img/4t.png);
+	position: absolute;
+	top: 38px;
+	box-sizing:border-box;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	left: 20px;
+	padding-top: 54px;
+	padding-left: 10px;
+	height: 192px;
+	width: 300px;
+	z-index: 20;
+	display: none;
+}
+.mob1{
+	margin-left: 50px;
+}
+.information b{
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.logo{
+	font-family: 'Sigmar One', cursive;
+	font-size: 2.25em;
+	color:#0AADC9;
+}
+.search-input{
+	/*font-style: italic;*/
+	font-family: 'Armata', sans-serif;
+	font-size: 1.1em;
+}
+/*.menuClick{
+	font-weight: bold;
+}
+*/
+.imgRew{
+	height: 150px;
+	width: 150px;
+	display: block;
+	float: left;
+	margin-right: 40px;
+
+}
+.comText{
+	display: inline-block;
+	float: left;
+	font-size: 1.2em;
+	width: 360px;
+	text-align: left;
+	vertical-align: middle;
+	margin: 8% 0;
+
+}
+.comment{
+	margin: 0 auto 40px;
+	height: 152px;
+
+}
+.comment {
+  height: 150px;;
+}
+.bm{
+	width: 230px;
+}
+.carousel-inner .item .imgCtrlSlider{
+	height: 160px;
+	width: 260px ;
+}
+.mainImg{
+	background:url(../img/att_3007.jpg) no-repeat 0px -73px;
+	height: 160px;
+	background-size: cover;
+	float: left;
+}
+.AboutConsoles{
+	display: block;
+}
+footer{
+	margin: 0 auto;
+	background: #eee;
+	height: 150px;
+	padding: 20px 50px;
+	border-radius: 5px 5px 0 0;
+}
+.CopR{
+	font-size:1.5em;
+}
+.hideTrades{
+}
+/*.menuStiky{
+	position: fixed;
+	z-index: 20;
+}*/
