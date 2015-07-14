@@ -17,7 +17,7 @@
   <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 </head>
 <body>
-<div class="container">
+<div class="container wrap">
     <nav class="navbar navbar-default">
         <a class="navbar-brand" href="#"><span class="logo">Pultcher</span></a>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-6">
@@ -64,9 +64,53 @@
             </div>
         </div>
         <div class="col-md-9">
-            <div ng-view></div>  
+            <div ng-view></div>
+            <div class="reviews" ng-controller="TechListCtrl">
+                <h4>Оставить отзывы</h4>
+                <ul>
+                    <li ng-repeat="review in reviews">
+                        <blockquote>
+                            <strong> {{review.stars}} Stars</strong>
+                            {{review.body}}
+                            <cite class="clearfix">— {{review.author}}</cite>
+                        </blockquote>
+                    </li>
+                </ul>
+                <form name="reviewForm" ng-controller="ReviewCtrl">
+              <!--  Live Preview -->
+                    <blockquote>
+                       <strong>{{review.stars}} Stars</strong>
+                       {{review.body}}
+                       <cite class="clearfix">—{{review.author}}</cite>
+                    </blockquote>
+              <!--  Review Form -->
+                    <h4>Submit a Review</h4>
+                    <fieldset class="form-group">
+                        <select ng-model="review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]"  title="Stars">
+                        <option value="">Оцените обслуживание</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <textarea ng-model="review.body" class="form-control" placeholder="Write a short review of the product..." title="Review"></textarea>
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <input ng-model="review.author" type="text" class="form-control" placeholder="jimmyDean" title="Email" />
+                    </fieldset>
+                    <fieldset class="form-group">
+                        <input type="submit" class="btn btn-primary pull-right" value="Submit Review" ng-click="addReview()"/>
+                    </fieldset>
+                </form>
+            </div>  
         </div>
     </div>
+</div>
+<div class="container">
+    <footer class="site-footer">
+      I'm the Sticky Footer.
+        <div class="footer-cpy">
+            © 2015 Copyright Text
+        </div>
+    </footer>
 </div>
 <script src="js/scripts.js"></script>
 </body>

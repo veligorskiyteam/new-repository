@@ -21,7 +21,7 @@ var StoreControllers = angular.module('StoreControllers',[]);
     $scope.pageSize = 10;
 }]);
 
-StoreControllers.controller('TechListCtrl', function($scope){
+StoreControllers.controller('TechListCtrl', ['$scope', function($scope){
   $scope.techs = [
     {'name': 'Бытовая техника',
      'snippet': 'Fast just got faster with Nexus S.',
@@ -70,6 +70,22 @@ StoreControllers.controller('TechListCtrl', function($scope){
      'snippet': 'The Next, Next Generation tablet.',
     'price': 450.00}
   ];
+    $scope.reviews = [
+    {'stars': 5,
+    'body': 'Крутой сайт',
+    'author': 'Иванов Алекс',
+    createdOn: 1397490980837}
+    ];
     $scope.currentPage = 1;
     $scope.pageSize = 10;
+}]);
+
+StoreControllers.controller('ReviewCtrl', function($scope){
+    $scope.review = {};
+    $scope.addReview = function() {
+        $scope.reviews.push($scope.review);
+        console.log($scope.review);
+        $scope.review = {};
+        console.log($scope.review);
+  };
 });

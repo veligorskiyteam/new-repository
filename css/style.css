@@ -154,3 +154,40 @@
 	text-transform: uppercase;
 	font-weight: 600;
 }
+
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+.wrap {
+  min-height: 100%;
+  /* equal to footer height */
+  margin-bottom: -115px; 
+}
+.wrap:after {
+  content: "";
+  display: block;
+}
+.site-footer, .wrap:after {
+  height: 115px; 
+}
+.site-footer {
+  background: #f5f5f5;
+  position: relative;
+  border: 1px solid #e7e7e7;
+  border-radius: 5px;
+  padding: 10px;
+}
+.footer-cpy{
+	background: #eeeeee ;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 10px;
+}
+.reviews ul{
+	list-style: none;
+}
