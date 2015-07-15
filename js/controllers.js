@@ -11,7 +11,7 @@
     });
 }]);
 */
-var StoreControllers = angular.module('StoreControllers',[]);
+var StoreControllers = angular.module('StoreControllers',['ui.bootstrap']);
    StoreControllers.controller('PultListCtrl', ['$scope', '$http',
   function ($scope, $http) {
     $http.get('products/pultss.json').success(function(data) {
@@ -88,4 +88,23 @@ StoreControllers.controller('ReviewCtrl', function($scope){
         $scope.review = {};
         console.log($scope.review);
   };
+});
+
+StoreControllers.controller('RatingCtrl', function ($scope) {
+  $scope.rate = 1;
+  $scope.max = 5;
+  $scope.isReadonly = false;
+
+  $scope.hoveringOver = function(value) {
+    $scope.overStar = value;
+    $scope.percent = 100 * (value / $scope.max);
+  };
+
+  $scope.ratingStates = [
+    {stateOn: 'glyphicon-ok-sign', stateOff: 'glyphicon-ok-circle'},
+    {stateOn: 'glyphicon-star', stateOff: 'glyphicon-star-empty'},
+    {stateOn: 'glyphicon-heart', stateOff: 'glyphicon-ban-circle'},
+    {stateOn: 'glyphicon-heart'},
+    {stateOff: 'glyphicon-off'}
+  ];
 });

@@ -5,11 +5,15 @@
   <title>PulTcheR</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="bower_components/angular-bootstrap/ui-bootstrap-csp.css">
+
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="bower_components/jquery/dist/jquery.js"></script>
   <script src="bower_components/js/bootstrap.min.js"></script>
   <script src="directives/pagination/dirPagination.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+  <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
   <script src="js/app.js"></script>
   <script src="js/controllers.js"></script>
 
@@ -120,7 +124,7 @@
                     <ul>
                         <li ng-repeat="review in reviews">
                             <blockquote>
-                                <strong> {{review.stars}} Stars</strong>
+                                <strong> {{review.stars}} <span class="glyphicon glyphicon-star" aria-hidden="true"></span></strong>
                                 {{review.body}}
                                 <cite class="clearfix">— {{review.author}}</cite>
                             </blockquote>
@@ -134,11 +138,11 @@
                            <cite class="clearfix">—{{review.author}}</cite>
                         </blockquote>
                   <!--  Review Form -->
-                        <h4><p class="text-primary">Оставить отзывы:</p></h4>
-                        <fieldset class="form-group">
-                            <select ng-model="review.stars" class="form-control" ng-options="stars for stars in [5,4,3,2,1]"  title="Stars">
-                            <option value="">Оцените обслуживание</option>
-                            </select>
+                        <h4><p class="text-primary text-center">Оставить отзыв:</p></h4>
+                        <fieldset class="form-group stars" ng-controller="RatingCtrl">
+                            <h5>Оцените обслуживание:</h5>
+                            <rating ng-model="review.stars" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
+                            <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
                         </fieldset>
                         <fieldset class="form-group">
                             <textarea ng-model="review.body" class="form-control" placeholder="Оставьте комментарий..." title="Review"></textarea>
