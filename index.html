@@ -1,7 +1,8 @@
 <!doctype html>
-<html lang="en" ng-app="store">
+<html ng-app="store">
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PulTcheR</title>
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="css/style.css">
@@ -21,7 +22,9 @@
   <link href='http://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
 </head>
 <body>
-
+<!--<div class="splash">
+  <h2>Loading</h2>
+</div>-->
 <div class="container wrap">
     <nav class="navbar navbar-default">
         <a class="navbar-brand" href="#"><span class="logo">Pultcher</span></a>
@@ -119,39 +122,38 @@
         <div class="col-md-9">
             <div ng-view></div>
             <div class="col-md-9">
-                <div class="reviews" ng-controller="TechListCtrl">
+                <div class="reviews" ng-controller="ReviewCtrl">
                     <h4><p class="text-primary">Отзывы:</p></h4>
                     <ul>
-                        <li ng-repeat="review in reviews">
+                        <li ng-repeat="todo in todos track by $index">
                             <blockquote>
-                                <strong> {{review.stars}} <span class="glyphicon glyphicon-star" aria-hidden="true"></span></strong>
-                                {{review.body}}
-                                <cite class="clearfix">— {{review.author}}</cite>
+                                <strong> {{todo.stars}} <span class="glyphicon glyphicon-star" aria-hidden="true"></span></strong>
+                                {{todo.body}}
+                                <cite class="clearfix">— {{todo.name}}</cite>
                             </blockquote>
                         </li>
                     </ul>
-                    <form name="reviewForm" ng-controller="ReviewCtrl">
-                  <!--  Live Preview -->
+                    <!--  Live Preview -->
                         <blockquote>
-                           <strong>{{review.stars}} Stars</strong>
-                           {{review.body}}
-                           <cite class="clearfix">—{{review.author}}</cite>
+                           <strong>{{todoStars}} <span class="glyphicon glyphicon-star" aria-hidden="true"></strong>
+                           {{todoBody}}
+                           <cite class="clearfix">—{{todoName}}</cite>
                         </blockquote>
-                  <!--  Review Form -->
+                    <form name="reviewForm" ng-submit="addReview()">    
+                    <!--  Review Form -->
                         <h4><p class="text-primary text-center">Оставить отзыв:</p></h4>
-                        <fieldset class="form-group stars" ng-controller="RatingCtrl">
+                        <fieldset class="form-group stars">
                             <h5>Оцените обслуживание:</h5>
-                            <rating ng-model="review.stars" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="overStar = null"></rating>
-                            <span class="label" ng-class="{'label-warning': percent<30, 'label-info': percent>=30 && percent<70, 'label-success': percent>=70}" ng-show="overStar && !isReadonly">{{percent}}%</span>
+                            <rating ng-class="{'clr-red': percent<30, 'clr-blue':percent>=30 && percent<70, 'clr-green':percent>=70, 'clr-default':percent>=110}" ng-model="todoStars" max="max" readonly="isReadonly" on-hover="hoveringOver(value)" on-leave="percent = 110"></rating>
                         </fieldset>
                         <fieldset class="form-group">
-                            <textarea ng-model="review.body" class="form-control" placeholder="Оставьте комментарий..." title="Review"></textarea>
+                            <textarea ng-model="todoBody" class="form-control" placeholder="Оставьте комментарий..." title="Review"></textarea>
                         </fieldset>
                         <fieldset class="form-group">
-                            <input ng-model="review.author" type="text" class="form-control" placeholder="Введите имя" title="Email" />
+                            <input ng-model="todoName" type="text" class="form-control" placeholder="Введите имя" title="Author" />
                         </fieldset>
                         <fieldset class="form-group">
-                            <input type="submit" class="btn btn-primary pull-right" value="Оставить отзыв" ng-click="addReview()"/>
+                            <input type="submit" class="btn btn-primary pull-right" value="Оставить отзыв"/>
                         </fieldset>
                     </form>
                 </div>  

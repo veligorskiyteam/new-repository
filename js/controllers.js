@@ -2,15 +2,6 @@
 
 /* Controllers */
 
-//var App = angular.module('store', ['angularUtils.directives.dirPagination']);
-
-/*App.controller('StoreCtrl', ['$scope', '$http',
-  function ($scope, $http) {
-    $http.get('products/pults.json').success(function(data) {
-      $scope.pults = data;
-    });
-}]);
-*/
 var StoreControllers = angular.module('StoreControllers',['ui.bootstrap']);
    StoreControllers.controller('PultListCtrl', ['$scope', '$http',
   function ($scope, $http) {
@@ -20,6 +11,10 @@ var StoreControllers = angular.module('StoreControllers',['ui.bootstrap']);
     $scope.currentPage = 1;
     //$scope.pageSize = 9;
 }]);
+
+StoreControllers.factory('myhttpserv', function ($http) {
+    return $http.get('storage.txt').error(function(status){console.log(status)});
+});
 
 StoreControllers.controller('TechListCtrl', ['$scope', function($scope){
   $scope.techs = [
@@ -70,41 +65,41 @@ StoreControllers.controller('TechListCtrl', ['$scope', function($scope){
      'snippet': 'The Next, Next Generation tablet.',
     'price': 450.00}
   ];
-    $scope.reviews = [
-    {'stars': 5,
-    'body': 'Крутой сайт',
-    'author': 'Иванов Алекс',
-    createdOn: 1397490980837}
-    ];
     $scope.currentPage = 1;
     //$scope.pageSize = 10;
 }]);
 
-StoreControllers.controller('ReviewCtrl', function($scope){
-    $scope.review = {};
-    $scope.addReview = function() {
-        $scope.reviews.push($scope.review);
-        console.log($scope.review);
-        $scope.review = {};
-        console.log($scope.review);
-  };
-});
+StoreControllers.controller('ReviewCtrl', function ($scope, myhttpserv, $http) {
+    myhttpserv.then(function(response){
+        $scope.todos = (response.data !== null) ? response.data : [];
+        var httpPost = function() {
+            $http.post('save.php', JSON.stringify($scope.todos)).error(function(status){console.log(status)});
+        };
 
-StoreControllers.controller('RatingCtrl', function ($scope) {
-  $scope.rate = 1;
-  $scope.max = 5;
-  $scope.isReadonly = false;
+        $scope.addReview = function() {
+            $scope.todos.push({
+                stars: $scope.todoStars,
+                body: $scope.todoBody,
+                name: $scope.todoName
+            });
+            $scope.todoStars = ''; 
+            $scope.todoBody = ''; 
+            $scope.todoName = ''; 
+            httpPost();
+        };
+        $('.splash, .container').fadeToggle();
+    });
+        $scope.rate = 1;
+        $scope.max = 5;
+        $scope.isReadonly = false;
 
-  $scope.hoveringOver = function(value) {
-    $scope.overStar = value;
-    $scope.percent = 100 * (value / $scope.max);
-  };
+      $scope.hoveringOver = function(value) {
+        $scope.overStar = value;
+        $scope.percent = 100 * (value / $scope.max);
+      };
 
   $scope.ratingStates = [
-    {stateOn: 'glyphicon-ok-sign', stateOff: 'glyphicon-ok-circle'},
-    {stateOn: 'glyphicon-star', stateOff: 'glyphicon-star-empty'},
-    {stateOn: 'glyphicon-heart', stateOff: 'glyphicon-ban-circle'},
-    {stateOn: 'glyphicon-heart'},
-    {stateOff: 'glyphicon-off'}
-  ];
+    {stateOn: 'glyphicon-star', stateOff: 'glyphicon-star-empty'}
+  ];    
+
 });

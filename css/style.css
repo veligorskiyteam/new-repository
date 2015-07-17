@@ -1,7 +1,30 @@
 html, body {
   height: 100%;
 }
+.splash {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    filter: alpha(opacity=60);
+    opacity: 0.6;
+    background: #000;
+    text-align: center;
+}
 
+.splash:before {
+    content: '';
+    height: 100%;
+    width: 1px;
+    margin-left: -1px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.container {
+    display: none;
+}
 .carousel-indicators {
   bottom: 0px !important;
 }
@@ -75,14 +98,6 @@ html, body {
 	overflow: hidden;
 }
 
-.contact{
-	height: 55px;
-	background: red;
-}
-
-#contact{
-	position: relative;
-}
 
 .mob{
 	margin-left: 50px;
@@ -264,3 +279,21 @@ html, body {
 .stars{
 	  font-size: 25px;
 }
+
+span:focus{
+  outline: none;
+}
+
+.clr-red{
+	color: #ff9800;
+}
+.clr-blue{
+	color: #2196f3;
+}
+.clr-green{
+	color: green;
+}
+.clr-default{
+	color: #333;
+}
+
