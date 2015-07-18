@@ -3,7 +3,12 @@
 /* Controllers */
 
 var StoreControllers = angular.module('StoreControllers',['ui.bootstrap']);
-   StoreControllers.controller('PultListCtrl', ['$scope', '$http',
+
+StoreControllers.factory('myhttpserv', function ($http) {
+    return $http.get('storage.txt').error(function(status){console.log(status)});
+});
+
+StoreControllers.controller('PultListCtrl', ['$scope', '$http',
   function ($scope, $http) {
     $http.get('products/pultss.json').success(function(data) {
       $scope.pults = data;
@@ -11,10 +16,6 @@ var StoreControllers = angular.module('StoreControllers',['ui.bootstrap']);
     $scope.currentPage = 1;
     //$scope.pageSize = 9;
 }]);
-
-StoreControllers.factory('myhttpserv', function ($http) {
-    return $http.get('storage.txt').error(function(status){console.log(status)});
-});
 
 StoreControllers.controller('TechListCtrl', ['$scope', function($scope){
   $scope.techs = [
@@ -75,7 +76,6 @@ StoreControllers.controller('ReviewCtrl', function ($scope, myhttpserv, $http) {
         var httpPost = function() {
             $http.post('save.php', JSON.stringify($scope.todos)).error(function(status){console.log(status)});
         };
-
         $scope.addReview = function() {
             $scope.todos.push({
                 stars: $scope.todoStars,
@@ -87,19 +87,17 @@ StoreControllers.controller('ReviewCtrl', function ($scope, myhttpserv, $http) {
             $scope.todoName = ''; 
             httpPost();
         };
-        $('.splash, .container').fadeToggle();
-    });
-        $scope.rate = 1;
-        $scope.max = 5;
-        $scope.isReadonly = false;
+        //$('.splash, .container').fadeToggle();
+    });  
+    $scope.rate = 1;
+    $scope.max = 5;
+    $scope.isReadonly = false;
 
-      $scope.hoveringOver = function(value) {
+    $scope.hoveringOver = function(value) {
         $scope.overStar = value;
         $scope.percent = 100 * (value / $scope.max);
-      };
-
-  $scope.ratingStates = [
-    {stateOn: 'glyphicon-star', stateOff: 'glyphicon-star-empty'}
-  ];    
-
+    };
+    $scope.ratingStates = [
+        {stateOn: 'glyphicon-star', stateOff: 'glyphicon-star-empty'}
+    ];   
 });

@@ -23,7 +23,7 @@ html, body {
 }
 
 .container {
-    display: none;
+    //display: none;
 }
 .carousel-indicators {
   bottom: 0px !important;
@@ -33,6 +33,23 @@ html, body {
 .tech{
 	width: 250px;
 	max-height: 355px;
+	overflow: hidden;
+}
+
+.caption h5{
+	height: 30px;
+	font-weight: bold;
+}
+
+.caption p{
+	padding: 0;
+	margin: 0;
+}
+
+.desc{
+	min-height: 40px;
+	max-height: 40px;
+	height: 40px;
 	overflow: hidden;
 }
 
@@ -80,24 +97,6 @@ html, body {
 .subMenu3 a:hover{
 	color: #428bca;
 }
-
-.caption h5{
-	height: 30px;
-	font-weight: bold;
-}
-
-.caption p{
-	padding: 0;
-	margin: 0;
-}
-
-.desc{
-	min-height: 40px;
-	max-height: 40px;
-	height: 40px;
-	overflow: hidden;
-}
-
 
 .mob{
 	margin-left: 50px;
@@ -192,9 +191,10 @@ html, body {
 .wrap:after {
   content: "";
   display: block;
+  height: 200px;
 }
 
-.site-footer, .wrap:after {
+.site-footer {
   height: 115px; 
 }
 
@@ -297,3 +297,21 @@ span:focus{
 	color: #333;
 }
 
+blockquote{
+	margin: 0;
+}
+
+input:required:valid,
+textarea:required:valid{
+	border-color: rgba(0,128,0,.4);
+}
+
+input:focus:required:invalid,
+textarea:focus:required:invalid{
+ border-color: rgba(255,0,0,.4);
+}
+
+textasrea.comment{
+	resize: none;
+	height: 100px;
+}

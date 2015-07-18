@@ -21,7 +21,8 @@ var App = angular.module('store', [
           templateUrl: 'products/AboutPults.html'
         }).
         when('/reviews',{
-          templateUrl: 'products/reviews.html'
+          templateUrl: 'products/reviews.html',
+          controller: 'ReviewCtrl'
         }).
         otherwise({
           templateUrl: 'products/home.html'
