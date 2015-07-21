@@ -1,4 +1,4 @@
-
+'use strict';
 
 /* Controllers */
 
@@ -76,6 +76,7 @@ StoreControllers.controller('ReviewCtrl', function ($scope, myhttpserv, $http) {
         var httpPost = function() {
             $http.post('save.php', JSON.stringify($scope.todos)).error(function(status){console.log(status)});
         };
+        $scope.todoId = $scope.todos.length;
         $scope.addReview = function() {
             $scope.todos.push({
                 stars: $scope.todoStars,
@@ -87,7 +88,7 @@ StoreControllers.controller('ReviewCtrl', function ($scope, myhttpserv, $http) {
             $scope.todoName = ''; 
             httpPost();
         };
-        //$('.splash, .container').fadeToggle();
+        $('.splash, .containerx, .reviews').fadeToggle();
     });  
     $scope.rate = 1;
     $scope.max = 5;

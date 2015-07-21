@@ -216,10 +216,12 @@ html, body {
 }
 .reviews{
 	margin: 20px 0;
+	display: none;
 }
 
 .reviews ul{
 	list-style: none;
+	padding: 0;
 }
 
 .imgRew{
@@ -240,16 +242,6 @@ html, body {
 	vertical-align: middle;
 	margin: 8% 0;
 
-}
-
-.comment{
-	margin: 0 auto 40px;
-	height: 152px;
-
-}
-
-.comment {
-  height: 150px;;
 }
 
 .bm{
@@ -311,7 +303,7 @@ textarea:focus:required:invalid{
  border-color: rgba(255,0,0,.4);
 }
 
-textasrea.comment{
+textarea.comment{
 	resize: none;
-	height: 100px;
+	height: 120px;
 }

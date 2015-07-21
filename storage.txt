@@ -1,1 +1,1 @@
-[]
+[{"stars":4,"body":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quisquam dolores vero, laboriosam. Modi, quidem optio ea tenetur a atque eligendi saepe ipsum ratione laboriosam culpa vitae excepturi temporibus eum consequatur velit!","name":"Александр"},{"stars":5,"body":"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil quisquam dolores vero, laboriosam.","name":"Дмитрий"}]
